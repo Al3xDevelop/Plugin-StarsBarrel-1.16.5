@@ -1,0 +1,20 @@
+name: StarsBarrel
+version: 1.0.0
+main: Al3x.starsBarrel.StarsBarrel
+api-version: 1.16
+author: Al3x
+description: Barrels that can be opened with lockpicks
+
+commands:
+  starsbarrel:
+    description: Main command for StarsBarrel
+    usage: /starsbarrel <give|createdrop|setbarrel>
+    aliases: [sb, sbarrel]
+
+permissions:
+  starsbarrel.admin:
+    description: Allows all StarsBarrel commands
+    default: op
+  starsbarrel.use:
+    description: Allows using lockpicks on barrels
+    default: true

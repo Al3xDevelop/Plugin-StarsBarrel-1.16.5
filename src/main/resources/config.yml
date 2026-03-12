@@ -1,0 +1,82 @@
+#Настройка дата базы
+database:
+  type: "sqlite"
+  host: "localhost"
+  port: 3306
+  database: "starsbarrel"
+  username: "root"
+  password: ""
+
+#Настройка отмычек
+keys:
+  common:
+    material: "tripwirehook"
+    name: "&7Обычная отмычка"
+    lore:
+      - "&7Удача: &f10%"
+      - "&7Гарантировано: &f0 предметов"
+    chance: 10.0
+    guaranteed: 0
+    enchanted: false
+  uncommon:
+    material: "tripwirehook"
+    name: "&aНеобычная отмычка"
+    lore:
+      - "&7Удача: &f5%"
+      - "&aГарантировано: &f0 предметов"
+    chance: 5.0
+    guaranteed: 0
+    enchanted: true
+  rare:
+    material: "tripwirehook"
+    name: "&9Редкая отмычка"
+    lore:
+      - "&7Удача: &f3%"
+      - "&9Гарантировано: &f1 предмет"
+    chance: 3.0
+    guaranteed: 1
+    enchanted: true
+  epic:
+    material: "DIAMOND"
+    name: "&5Эпическая отмычка"
+    lore:
+      - "&7Удача: &f2%"
+      - "&5Гарантировано: &f2 предмета"
+    chance: 2.0
+    guaranteed: 2
+    enchanted: true
+  mythic:
+    material: "tripwirehook"
+    name: "&dМифическая отмычка"
+    lore:
+      - "&7Удача: &f1"
+      - "&7Гарантировано: &f3 предмета"
+    chance: 1
+    guaranteed: 3
+    enchanted: true
+  legendary:
+    material: "tripwirehook"
+    name: "&6Легендарная отмычка"
+    lore:
+      - "&7Удача: &f0.5%"
+      - "&7Гарантировано: &f4 предмета"
+    chance: 0.5
+    guaranteed: 4
+    enchanted: true
+
+#Сообщения игроку
+messages:
+  no-permission: "&cУ вас нет прав!"
+  only-players: "&cТолько для игроков!"
+  invalid-args: "&cНеверные аргументы!"
+  key-given: "&aВыдали %type% игроку %player%"
+  key-received: "&aВы получили %type%"
+  barrel-set: "&aБочка установлена!"
+  barrel-remove: "&aБочка удалена!"
+  not-looking-at-block: "&cВы должны смотреть на блок!"
+  already-barrel: "&cЭто уже бочка!"
+  not-barrel: "&cЭто не бочка!"
+  need-key: "&cНужна отмычка!"
+  open-success: "&aБочка открыта! Лут выпал в инвентарь"
+  menu-title: "&8Настройка дропа"
+  chance-format: "&7Шанс: &e%chance%%"
